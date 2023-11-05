@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simo</title>
+    <meta content="eliseo.lol" property="og:title" />
+    <meta content="my name is lew and im a black thug" property="og:description" />
+    <meta content="eliseo.lol" property="og:url" />
+    <meta content="#C5B4E3" data-react-helmet="true" name="theme-color" />
+    <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Ftransparent-circle-black.png&f=1&nofb=1&ipt=15c201a69ecae5cde0dff42427722791440df20bb7308cd70477edaedacadb96&ipo=images">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/starborn">
+
+    <style>
+        body {
+            background-color: #0d0d0e;
+            background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F81%2F0d%2F7f%2F810d7f716a950a63a9c0dba6aacb1a73.gif&f=1&nofb=1&ipt=0c75fd4bff35772fd728de224b5a3af5a9960fd01aee537d68d64cba5fdd4cae&ipo=images) no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+        }
+        .pfp-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pfp-image {
+            width: 240px;
+            height: 240px;
+        }
+        .username, .bio-text {
+            font-family: 'starborn', sans-serif;
+            color: #cce3ff;
+            margin: 0;
+            line-height: 1;
+            font-size: 1.2em;
+            background: url(https://i.ibb.co/HgjQ6sM/udGakie.gif);
+            background-size: cover;
+            display: inline;
+            padding: 10px;
+        }
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        .tooltiptext {
+            visibility: hidden;
+            width: 144px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            font-family: 'starborn', sans-serif;
+            border-radius: 6px;
+            padding: 6px;
+            position: absolute;
+            z-index: 1;
+            bottom: 180%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        @keyframes dropIn {
+            from {
+                transform: translateY(-24px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .profile-content {
+            animation: dropIn 1s ease-in-out;
+        }
+        .social-icons {
+            color: #cce3ff;
+            width: 36px;
+            height: 36px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .social-icons:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body style="overflow: hidden;">
+  <div class="center">
+      <div class="container profile-content">
+          <div class="pfp-container">
+              <img class="pfp-image" src="https://cdn.discordapp.com/attachments/1170184368153690123/1170867056657322024/4B9EB03A-945E-4D99-816D-8E9932BD6667.gif?ex=655a99eb&is=654824eb&hm=a38c5e25acb25d9e5b898565e375c1bb246b9dbe1401ed1cd2d4330b10b1138c&" alt="pfp">
+              <p class="username"><span class="sparkle">eli</span></p>
+          </div>
+          <p class="bio-text">im black as fuck</p>
+      </div>
+      <div class="socials">
+          <a class="tooltip" href="https://discord.com" target="_blank">
+              <span class="tooltiptext">lewidc</span>
+              <img class="social-icons" src="https://cdn.discordapp.com/attachments/1119372837619257565/1166854579812577320/image-removebg-preview_4_1.png?ex=654c0102&is=65398c02&hm=e35192f2f5e309cb6a94afc9186a451aba9348ca9b8832c6f7364de1b39df3aa&" alt="Discord Icon">
+          </a>
+          <a class="tooltip" href="https://www.instagram.com/levw/" target="_blank">
+              <span class="tooltiptext">Instagram</span>
+              <img class="social-icons" src="https://media.discordapp.net/attachments/1170184368153690123/1170871994309410937/Pngtreeinstagram_white_icon_instagram_instagram_3570419.png?ex=655a9e85&is=65482985&hm=700f8e0cfbeafa7502bb3e9003ab88145ab9bd32642e5ac2011d4674500f739a&=&width=676&height=676" alt="Instagram Icon">
+          </a>
+          <a class="tooltip" href="https://www.roblox.com/users/2339507534/profile" target="_blank">
+              <span class="tooltiptext">Roblox</span>
+              <img class="social-icons" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Fwhite-roblox-logo-1.png&f=1&nofb=1&ipt=2b13089287ff4d01cb4ecd1f0a08b4b0fec7e157013e578ce5e9aeac5cefae0b&ipo=images" alt="Roblox icon">
+          </a>
+      </div>
+  </div>
+
+  <script>
+    // Disable right-click
+    window.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+
+    // Disable text selection
+    document.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+    });
+
+    // Disable key combinations that open browser developer tools
+    document.addEventListener('keydown', function (e) {
+        if ((e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) || (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) || (e.ctrlKey && e.key === 'U' || e.key === 'u')) {
+            e.preventDefault();
+        }
+    });
+  </script>
+</body>
+</html>
 
